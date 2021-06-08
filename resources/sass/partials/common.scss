@@ -26,6 +26,9 @@ body {
 
 .flexer {
     display: flex;
+    &.col {
+        flex-direction: column;
+    }
 }
 .flexer.wrap {
     flex-wrap: wrap;

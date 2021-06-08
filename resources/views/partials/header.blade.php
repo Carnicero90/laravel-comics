@@ -6,7 +6,7 @@
         </div>
     </div>
     <nav>
-        <div class="container flexer">
+        <div class="container flexer center-cross">
             <div class="logo"><img src="{{ asset('../img/dc-logo.png') }}" alt="" class="logo"></div>
             <ul class="navbar flexer center-cross">
                 <li>CHARACTERS</li>
@@ -20,7 +20,11 @@
                 <li>NEWS</li>
                 <li>SHOP</li>
             </ul>
-            <div class="search"></div>
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <i class="fas fa-search"></i>
+
+            </div>
         </div>
     </nav>
     <div class="jumbotron">

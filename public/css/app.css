@@ -29,6 +29,9 @@ body {
 .flexer {
   display: flex;
 }
+.flexer.col {
+  flex-direction: column;
+}
 
 .flexer.wrap {
   flex-wrap: wrap;
@@ -92,6 +95,28 @@ header nav .navbar > li {
   font-weight: 500;
   opacity: 0.8;
 }
+header nav .search {
+  border-bottom: 2px solid #0282f9;
+}
+header nav .search input {
+  font-size: 15px;
+  padding-bottom: 4px;
+  border: none;
+  outline: none;
+}
+header nav .search input::-moz-placeholder {
+  text-align: right;
+  opacity: 0.8;
+}
+header nav .search input:-ms-input-placeholder {
+  text-align: right;
+  opacity: 0.8;
+}
+header nav .search input::placeholder {
+  text-align: right;
+  opacity: 0.8;
+}
+
 footer {
   height: 300px;
   background-repeat: no-repeat;
@@ -99,11 +124,32 @@ footer {
 }
 
 .comics-collection {
-  background-color: black;
+  position: relative;
+  padding-top: 53px;
+  background-color: #1c1c1c;
+}
+.comics-collection .super {
+  position: absolute;
+  top: -27px;
+  padding: 8px 33px;
+  font-size: 34px;
 }
 .comics-collection .comic {
+  text-transform: uppercase;
   width: calc( 100% / 6 );
+  padding-left: 29px;
 }
-.comics-collection .comic:nth-of-type(n+2) {
-  padding-left: 10px;
+.comics-collection .comic:nth-of-type(6n+1) {
+  padding-left: 0;
+}
+.comics-collection .comic img {
+  width: 100%;
+  max-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.comics-collection .comic span {
+  padding-top: 13px;
+  padding-bottom: 48px;
+  font-weight: 500;
 }

@@ -33,5 +33,18 @@ header {
                 }
             }
         }
+        .search {
+            border-bottom: 2px solid $color1;
+            input {
+                font-size: 15px;
+                padding-bottom: 4px;
+                border: none;
+                outline: none;
+                &::placeholder {
+                    text-align: right;
+                    opacity: .8;
+                }
+            }
+        }
     }
 }

@@ -5,11 +5,12 @@
             <h1 class="super bc_1 c_2">CURRENT SERIES</h1>
             <ul class="flexer wrap c_2">
                 @foreach ($comics as $comic)
-                    <li class="comic">
+                    <li class="comic flexer col">
                         <div>
                             <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
-                            <span>{{ $comic['series'] }}</span>
                         </div>
+                        <span>{{ $comic['series'] }}</span>
+
                     </li>
                 @endforeach
 
