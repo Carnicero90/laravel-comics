@@ -8,7 +8,7 @@
     <nav>
         <div class="container flexer">
             <div class="logo"><img src="{{ asset('../img/dc-logo.png') }}" alt="" class="logo"></div>
-            <ul class="navbar flexer">
+            <ul class="navbar flexer center-cross">
                 <li>CHARACTERS</li>
                 <li class="active">COMICS</li>
                 <li>MOVIES</li>

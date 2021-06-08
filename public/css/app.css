@@ -17,6 +17,10 @@ img {
   max-width: 100%;
 }
 
+body {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
 .container {
   width: 80%;
   margin: auto;
@@ -32,6 +36,10 @@ img {
 
 .flexer.between {
   justify-content: space-between;
+}
+
+.flexer.center-cross {
+  align-items: center;
 }
 
 .c_1 {
@@ -53,18 +61,37 @@ img {
 header {
   background-image: url("../img/jumbotron.jpg");
   background-size: cover;
-  background-position-y: -50%;
-  height: 400px;
+  background-repeat: no-repeat;
+  background-position-y: 139px;
+  padding-bottom: 400px;
 }
 header .banner {
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bolder;
   background-color: #0282f9;
   text-align: right;
   color: white;
 }
 header nav {
+  padding-top: 18px;
+  padding-bottom: 18px;
   background-color: white;
 }
-
+header nav .logo {
+  height: 80px;
+}
+header nav .navbar {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+header nav .navbar > li {
+  font-size: 19px;
+  margin-right: 41px;
+  font-weight: 500;
+  opacity: 0.8;
+}
 footer {
   height: 300px;
   background-repeat: no-repeat;

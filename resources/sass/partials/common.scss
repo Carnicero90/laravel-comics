@@ -15,6 +15,10 @@ img {
     max-width: 100%;
 }
 
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
 .container {
     width: 80%;
     margin: auto;
@@ -28,6 +32,9 @@ img {
 }
 .flexer.between {
     justify-content: space-between;
+}
+.flexer.center-cross {
+    align-items: center;
 }
 
 .c_1 {

@@ -1,14 +1,37 @@
 header {
     background-image: url('../img/jumbotron.jpg');
     background-size: cover;
-    background-position-y: -50%;
-    height: 400px;
+    background-repeat: no-repeat;
+    background-position-y: 139px;
+    padding-bottom: 400px;
     .banner {
+        font-size: 14px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-weight: bolder;
         background-color: $color1;
         text-align: right;
         color: $color2;
     }
     nav {
+        padding-top: 18px;
+        padding-bottom: 18px;
         background-color: $color2;
+        .logo {
+            height: 80px;
+        }
+        .navbar {
+            padding-left: 100px;
+            padding-right: 100px;
+            &>li {
+                font-size: 19px;
+                margin-right: 41px;
+                font-weight: 500;
+                opacity: .8;
+                &.active {
+
+                }
+            }
+        }
     }
 }
