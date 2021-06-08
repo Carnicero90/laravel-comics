@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.flexer {
+  display: flex;
+}
+
+.flexer.wrap {
+  flex-wrap: wrap;
+}
+
+.flexer.between {
+  justify-content: space-between;
+}
+
+.c_1 {
+  color: #0282f9;
+}
+
+.c_2 {
+  color: white;
+}
+
+.bc_1 {
+  background-color: #0282f9;
+}
+
+.bc_2 {
+  background-color: white;
+}
+
+header {
+  background-image: url("../img/jumbotron.jpg");
+  background-size: cover;
+  background-position-y: -50%;
+  height: 400px;
+}
+header .banner {
+  background-color: #0282f9;
+  text-align: right;
+  color: white;
+}
+header nav {
+  background-color: white;
+}
+
+footer {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-image: url("../img/dc-logo-bg.png"), url("../img/footer-bg.jpg");
+}
+
+.comics-collection {
+  background-color: black;
+}
+.comics-collection .comic {
+  width: calc( 100% / 6 );
+}
+.comics-collection .comic:nth-of-type(n+2) {
+  padding-left: 10px;
+}

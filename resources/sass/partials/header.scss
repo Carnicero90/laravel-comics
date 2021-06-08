@@ -1,0 +1,14 @@
+header {
+    background-image: url('../img/jumbotron.jpg');
+    background-size: cover;
+    background-position-y: -50%;
+    height: 400px;
+    .banner {
+        background-color: $color1;
+        text-align: right;
+        color: $color2;
+    }
+    nav {
+        background-color: $color2;
+    }
+}
