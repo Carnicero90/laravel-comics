@@ -20,11 +20,11 @@
                 <li>NEWS</li>
                 <li>SHOP</li>
             </ul>
-            <div class="search">
+            {{-- <div class="search">
                 <input type="text" placeholder="Search">
                 <i class="fas fa-search"></i>
 
-            </div>
+            </div> --}}
         </div>
     </nav>
     <div class="jumbotron">

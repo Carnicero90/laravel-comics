@@ -13,10 +13,6 @@ a {
   color: inherit;
 }
 
-img {
-  max-width: 100%;
-}
-
 body {
   font-family: "Barlow Condensed", sans-serif;
 }
@@ -122,10 +118,14 @@ footer {
   background-repeat: no-repeat;
   background-image: url("../img/dc-logo-bg.png"), url("../img/footer-bg.jpg");
 }
+footer .footer-list li {
+  opacity: 0.7;
+}
 
 .comics-collection {
   position: relative;
   padding-top: 53px;
+  padding-bottom: 20px;
   background-color: #1c1c1c;
 }
 .comics-collection .super {
@@ -144,7 +144,7 @@ footer {
 }
 .comics-collection .comic img {
   width: 100%;
-  max-height: 300px;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -152,4 +152,19 @@ footer {
   padding-top: 13px;
   padding-bottom: 48px;
   font-weight: 500;
+}
+
+.btn {
+  font-weight: bolder;
+  padding: 8px 38px;
+}
+
+.subnav {
+  padding-top: 3.1em;
+  padding-bottom: 3.1em;
+}
+.subnav img {
+  vertical-align: middle;
+  padding-right: 1em;
+  height: 3.3em;
 }

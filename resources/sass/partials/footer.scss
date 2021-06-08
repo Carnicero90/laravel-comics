@@ -3,4 +3,10 @@ footer {
     height: 300px;
     background-repeat: no-repeat;
     background-image: url("../img/dc-logo-bg.png"), url("../img/footer-bg.jpg");
+
+    .footer-list {
+        li {
+            opacity: .7;
+        }
+    }
 }

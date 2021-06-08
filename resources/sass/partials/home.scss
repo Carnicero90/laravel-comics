@@ -3,6 +3,7 @@
     position: relative;
     //test
     padding-top: 53px;
+    padding-bottom: 20px;
     background-color: #1c1c1c;
     .super {
         position: absolute;
@@ -20,7 +21,7 @@
         img {
             width: 100%;
             //test
-            max-height: 300px;
+            height: 200px;
             object-fit: cover;
         }
         span {
@@ -28,5 +29,22 @@
             padding-bottom: 48px;
             font-weight: 500;
         }
+       
+    }
+}
+
+.btn {
+    font-weight: bolder;
+    padding: 8px 38px;
+}
+
+
+.subnav {
+    padding-top: 3.1em;
+    padding-bottom: 3.1em;
+    img {
+        vertical-align: middle;
+        padding-right: 1em;
+        height: 3.3em;
     }
 }
