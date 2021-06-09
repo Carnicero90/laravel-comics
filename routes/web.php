@@ -12,7 +12,17 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::get('/', function () {
-    $data = ['comics'=> config('comics')];
+    $data = ['comics' => config('comics')];
     return view('home', $data);
-});
+})->name('home');
+
+Route::get('comic/{id}', function ($id) {
+    $comic_index = array_search($id, array_column(config('comics'), "id"));
+    if ($comic_index === false) {
+        return 'errore!';
+    }
+    $data = ['comic_details' => config('comics')[$comic_index]];
+    return view('comic', $data);
+})->name('comic');

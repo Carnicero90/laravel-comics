@@ -5,11 +5,18 @@
             <h1 class="super bc_1 c_2">CURRENT SERIES</h1>
             <ul class="flexer wrap c_2">
                 @foreach ($comics as $comic)
+
                     <li class="comic flexer col">
                         <div>
+
                             <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+
                         </div>
-                        <span>{{ $comic['series'] }}</span>
+
+                        <span>
+                            <a href="{{ route('comic', ['id' => $comic['id']]) }}">{{ $comic['series'] }}
+                            </a>
+                        </span>
 
                     </li>
                 @endforeach
@@ -23,11 +30,16 @@
     <section class="subnav bc_1 c_2">
         <div class="container">
             <ul class="flexer between">
-                <li><img src="{{ asset('../img/buy-comics-digital-comics.png') }}" alt=""><span><a href="">DIGITAL COMICS</a></span></li>
-                <li><img src="{{ asset('../img/buy-comics-digital-comics.png') }}" alt=""><span><a href="">DC MERCHANDISE</a></span></li>
-                <li><img src="{{ asset('../img/buy-comics-digital-comics.png') }}" alt=""><span><a href="">SUBSCRIPTION</a></span></li>
-                <li><img src="{{ asset('../img/buy-comics-digital-comics.png') }}" alt=""><span><a href="">COMIC SHOP LOCATOR</a></span></li>
-                <li><img src="{{ asset('../img/buy-comics-digital-comics.png') }}" alt=""><span><a href="">DC POWER VISA</a></span></li>
+                <li><img src="{{ asset('../img/buy-comics-digital-comics.png') }}" alt=""><span><a href="">DIGITAL
+                            COMICS</a></span></li>
+                <li><img src="{{ asset('../img/buy-comics-merchandise.png') }}" alt=""><span><a href="">DC
+                            MERCHANDISE</a></span></li>
+                <li><img src="{{ asset('../img/buy-comics-subscriptions.png') }}" alt=""><span><a
+                            href="">SUBSCRIPTION</a></span></li>
+                <li><img src="{{ asset('../img/buy-comics-shop-locator.png') }}" alt=""><span><a href="">COMIC SHOP
+                            LOCATOR</a></span></li>
+                <li><img src="{{ asset('../img/buy-dc-power-visa.svg') }}" alt=""><span><a href="">DC POWER
+                            VISA</a></span></li>
 
             </ul>
         </div>
