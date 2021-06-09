@@ -207,7 +207,7 @@ footer .footer-list li {
 .thumb {
   position: absolute;
   border: 1px solid white;
-  top: -313px;
+  top: -383px;
   left: 0;
 }
 .thumb .inner {
@@ -236,7 +236,7 @@ footer .footer-list li {
 
 .comic {
   padding-top: 71px;
-  padding-bottom: 63px;
+  padding-bottom: 84px;
 }
 .comic .comic-description {
   width: 47%;
@@ -269,15 +269,29 @@ footer .footer-list li {
 .comic .adv {
   color: #555555;
   font-weight: 600;
+}
+.comic .adv span {
   padding-bottom: 5px;
 }
 
-.table {
+.tabler {
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  background-color: #f6f6f6;
+  padding-top: 25px;
+}
+.tabler .table {
   width: 50%;
 }
-.table .label {
+.tabler .table h2 {
+  color: #003f5e;
+  font-weight: 600;
+  font-size: 22px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.tabler .table .label {
   width: 30%;
 }
-.table li {
-  border-bottom: 1px solid black;
+.tabler .table li {
+  border-bottom: 1px solid #e3e3e3;
 }

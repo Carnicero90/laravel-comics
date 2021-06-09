@@ -35,28 +35,28 @@
         </div>
     </section>
 
-    <section>
+    <section class="tabler">
         <div class="container flexer">
             <div class="table">
                 <h2>Talent</h2>
-                <div class="flexer">
-                    <span class="label">Art by:</span>
-                    <span class="list">
+                <ul>
+                    <li class="label">Art by:</li>
+                    <li class="list">
                         @foreach ($comic_details['artists'] as $item)
                             {{ $item }}@if (!$loop->last), @endif
 
                         @endforeach
-                    </span>
-                </div>
-                <div class="flexer">
-                    <span class="label">Written by:</span>
-                    <span class="list">
+                    </li>
+                </ul>
+                <ul class="flexer">
+                    <li class="label">Written by:</li>
+                    <li class="list">
                         @foreach ($comic_details['writers'] as $item)
                             {{ $item }}{{--  --}}@if (!$loop->last),
                             @endif
                         @endforeach
-                    </span>
-                </div>
+                    </li>
+                </ul>
 
             </div>
             <div class="table">
