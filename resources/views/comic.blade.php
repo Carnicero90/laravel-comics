@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('main_content')
-    <section class="bc_2">
+    <section class="comic bc_2">
         <div class="container rel">
             {{-- div.thumb --}}
             <div class="thumb">
@@ -12,17 +12,16 @@
             </div>
             {{-- END div.thumb --}}
             <div class="flexer">
-                <div class="comic-description grower">
+                <div class="comic-description">
                     <h1 class="comic-title">
                         {{ $comic_details['title'] }}
                     </h1>
                     <div class="flexer buy-comic">
-                        <span class="c_2">U.S. Price:</span>
-                        <span class="c_2 grower">{{ $comic_details['price'] }}</span>
-                        <span class="c_2">AVAILABLE</span>
+                        <span class="c_2 op grower">U.S. Price: <span class="c_2">{{ $comic_details['price'] }}</span></span>
+                        <span class="c_2 op">AVAILABLE</span>
                         <span class="c_2">Check Availability</span>
                     </div>
-                    <p>
+                    <p class="comic-desc">
                         {{ $comic_details['description'] }}
                     </p>
 
@@ -35,7 +34,7 @@
             </div>
         </div>
     </section>
-    
+
     <section>
         <div class="container flexer">
             <div class="table">

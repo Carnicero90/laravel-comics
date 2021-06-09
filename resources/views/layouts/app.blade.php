@@ -19,7 +19,7 @@
 
 <body>
     @include('partials.header')
-    <main>
+    <main class = "{{ Request::route()->getName() == 'comic' ? 'comic-main' : '' }}">
         @yield('main_content')
     </main>
     @include('partials.footer')

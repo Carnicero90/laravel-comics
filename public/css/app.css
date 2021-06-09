@@ -196,11 +196,19 @@ footer .footer-list li {
   height: 3.3em;
 }
 
+.comic-main::before {
+  content: "";
+  display: block;
+  background-color: #0282f9;
+  height: 80px;
+  width: 100%;
+}
+
 .thumb {
   position: absolute;
   border: 1px solid white;
-  top: -100px;
-  left: -200px;
+  top: -313px;
+  left: 0;
 }
 .thumb .inner {
   position: relative;
@@ -226,11 +234,42 @@ footer .footer-list li {
   bottom: 0;
 }
 
-.buy-comic {
-  background-color: #55ba59;
+.comic {
+  padding-top: 71px;
+  padding-bottom: 63px;
 }
-.buy-comic span {
+.comic .comic-description {
+  width: 47%;
+  padding-right: 38px;
+}
+.comic .comic-description .comic-title {
+  font-size: 34px;
+  text-transform: uppercase;
+  color: #003f5e;
+  padding-bottom: 21px;
+  font-weight: 600;
+}
+.comic .comic-description .buy-comic {
+  background-color: #55ba59;
+  border-bottom: 1px solid #357739;
+}
+.comic .comic-description .buy-comic > span {
+  padding: 14px 20px;
+  font-weight: 700;
+}
+.comic .comic-description .buy-comic > span.op {
   opacity: 0.6;
+}
+.comic .comic-description .comic-desc {
+  color: #555555;
+  padding-top: 13px;
+  font-size: 17px;
+  line-height: 25px;
+}
+.comic .adv {
+  color: #555555;
+  font-weight: 600;
+  padding-bottom: 5px;
 }
 
 .table {
