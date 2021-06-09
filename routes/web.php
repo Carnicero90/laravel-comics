@@ -26,3 +26,7 @@ Route::get('comic/{id}', function ($id) {
     $data = ['comic_details' => config('comics')[$comic_index]];
     return view('comic', $data);
 })->name('comic');
+
+Route::get('movies', function () {
+    return view('movies');
+})->name('movies');

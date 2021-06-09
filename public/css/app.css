@@ -22,11 +22,25 @@ body {
   margin: auto;
 }
 
+.rel {
+  position: relative;
+}
+
+.text-centered {
+  text-align: center;
+}
+
 .flexer {
   display: flex;
 }
 .flexer.col {
   flex-direction: column;
+}
+.flexer > .grower {
+  flex-grow: 1;
+}
+.flexer.end-cross {
+  align-items: flex-end;
 }
 
 .flexer.wrap {
@@ -74,6 +88,7 @@ header .banner {
   color: white;
 }
 header nav {
+  position: relative;
   padding-top: 18px;
   padding-bottom: 18px;
   background-color: white;
@@ -90,6 +105,18 @@ header nav .navbar > li {
   margin-right: 41px;
   font-weight: 500;
   opacity: 0.8;
+}
+header nav .navbar > li.active {
+  position: relative;
+  color: #0282f9;
+}
+header nav .navbar > li.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  display: block;
+  border-bottom: 5px solid #0282f9;
+  bottom: -47px;
 }
 header nav .search {
   border-bottom: 2px solid #0282f9;
@@ -167,4 +194,51 @@ footer .footer-list li {
   vertical-align: middle;
   padding-right: 1em;
   height: 3.3em;
+}
+
+.thumb {
+  position: absolute;
+  border: 1px solid white;
+  top: -100px;
+  left: -200px;
+}
+.thumb .inner {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.thumb .inner img {
+  display: block;
+}
+.thumb .inner span {
+  background-color: #00a9d9;
+  position: absolute;
+  padding: 3px;
+}
+.thumb .inner span.top-left {
+  left: 0;
+  top: 0;
+}
+.thumb .inner span.bottom {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+.buy-comic {
+  background-color: #55ba59;
+}
+.buy-comic span {
+  opacity: 0.6;
+}
+
+.table {
+  width: 50%;
+}
+.table .label {
+  width: 30%;
+}
+.table li {
+  border-bottom: 1px solid black;
 }

@@ -23,11 +23,22 @@ body {
     width: 80%;
     margin: auto;
 }
-
+.rel {
+    position: relative;
+}
+.text-centered {
+    text-align: center;
+}
 .flexer {
     display: flex;
     &.col {
         flex-direction: column;
+    }
+    &>.grower {
+        flex-grow: 1;
+    }
+    &.end-cross {
+        align-items: flex-end;
     }
 }
 .flexer.wrap {

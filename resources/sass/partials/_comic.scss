@@ -1,0 +1,45 @@
+.thumb {
+    position: absolute;
+    border: 1px solid white;
+    top: - 100px;
+    left: -200px;
+    .inner {
+        position: relative;
+        width: max-content;
+        img {
+            display: block;
+        }
+        span {
+            background-color: #00a9d9;
+            position: absolute;
+            padding: 3px;
+            &.top-left {
+                left: 0;
+                top: 0;
+            }
+            &.bottom {
+                width: 100%;
+                left: 0;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+
+.buy-comic {
+    background-color: #55ba59;
+    span {
+        opacity: .6;
+    }
+}
+
+.table {
+    width: 50%;
+    .label {
+        width: 30%;
+    }
+    li {
+        border-bottom: 1px solid black;
+    }
+}

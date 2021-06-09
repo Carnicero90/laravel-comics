@@ -14,6 +14,7 @@ header {
         color: $color2;
     }
     nav {
+        position: relative;
         padding-top: 18px;
         padding-bottom: 18px;
         background-color: $color2;
@@ -29,7 +30,16 @@ header {
                 font-weight: 500;
                 opacity: .8;
                 &.active {
-
+                    position: relative;
+                    color: $color1;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        display: block;
+                        border-bottom: 5px solid $color1;
+                        bottom: -47px;
+                    }
                 }
             }
         }
