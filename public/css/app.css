@@ -288,10 +288,12 @@ footer .footer-list li {
   font-weight: 600;
   font-size: 22px;
   border-bottom: 1px solid #e3e3e3;
+  padding-bottom: 23px;
 }
 .tabler .table .label {
   width: 30%;
 }
 .tabler .table li {
+  padding: 6px 0;
   border-bottom: 1px solid #e3e3e3;
 }

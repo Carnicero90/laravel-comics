@@ -40,24 +40,26 @@
             <div class="table">
                 <h2>Talent</h2>
                 <ul>
-                    <li class="label">Art by:</li>
-                    <li class="list">
+                    <li class="flexer">
+                        <span class="label">Art by:</span>
+                    <span class="list">
                         @foreach ($comic_details['artists'] as $item)
                             {{ $item }}@if (!$loop->last), @endif
 
                         @endforeach
+                    </span>
                     </li>
-                </ul>
-                <ul class="flexer">
-                    <li class="label">Written by:</li>
-                    <li class="list">
+                    <li class="flexer">
+                        <span class="label">Written by:</span>
+                    <span class="list">
                         @foreach ($comic_details['writers'] as $item)
                             {{ $item }}{{--  --}}@if (!$loop->last),
                             @endif
                         @endforeach
+                    </span>
                     </li>
+                    
                 </ul>
-
             </div>
             <div class="table">
                 <h2>Specs</h2>
