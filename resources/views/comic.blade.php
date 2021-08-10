@@ -17,7 +17,8 @@
                         {{ $comic_details['title'] }}
                     </h1>
                     <div class="flexer buy-comic">
-                        <span class="c_2 op grower">U.S. Price: <span class="c_2">{{ $comic_details['price'] }}</span></span>
+                        <span class="c_2 op grower">U.S. Price: <span
+                                class="c_2">{{ $comic_details['price'] }}</span></span>
                         <span class="c_2 op">AVAILABLE</span>
                         <span class="c_2">Check Availability</span>
                     </div>
@@ -42,30 +43,31 @@
                 <ul>
                     <li class="flexer">
                         <span class="label">Art by:</span>
-                    <span class="list">
-                        @foreach ($comic_details['artists'] as $item)
-                            {{ $item }}@if (!$loop->last), @endif
-
-                        @endforeach
-                    </span>
+                        <span class="list">
+                            @foreach ($comic_details['artists'] as $item)
+                                {{ $item }}@if (!$loop->last), @endif
+                            @endforeach
+                        </span>
                     </li>
                     <li class="flexer">
                         <span class="label">Written by:</span>
-                    <span class="list">
-                        @foreach ($comic_details['writers'] as $item)
-                            {{ $item }}{{--  --}}@if (!$loop->last),
-                            @endif
-                        @endforeach
-                    </span>
+                        <span class="list">
+                            @foreach ($comic_details['writers'] as $item)
+                                {{ $item }}@if (!$loop->last), @endif
+                            @endforeach
+                        </span>
                     </li>
-                    
                 </ul>
             </div>
+
             <div class="table">
                 <h2>Specs</h2>
                 <ul>
-                    <li class="flexer"><span class="label">Series:</span><span class="list">
-                            {{ $comic_details['series'] }}</span></li>
+                    <li class="flexer">
+                        <span class="label">Series:</span>
+                        <span class="list">
+                            {{ $comic_details['series'] }}</span>
+                    </li>
                     <li class="flexer">
                         <span class="label">U.S. Price:</span>
                         <span class="list">{{ $comic_details['price'] }}</span>
